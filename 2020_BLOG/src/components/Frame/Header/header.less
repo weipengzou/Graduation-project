@@ -1,0 +1,64 @@
+@import '../frame.less';
+@import './Nav/menu.less';
+.header {
+  height: @headerH !important;
+  .row {
+    height: @headerH !important;
+  }
+  > div {
+    justify-content: center;
+    align-items: center;
+  }
+}
+.logo {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  user-select: none;
+  .logo-img {
+    width: @headerH !important;
+    height: @headerH !important;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .sologan {
+    flex-wrap: wrap;
+    color: white;
+    font-size: @NavFontSize;
+    animation: silde 3s ease-in-out infinite;
+    font-weight: bold;
+    > div {
+      height: @headerH / 2;
+      line-height: @headerH / 2;
+    }
+  }
+}
+
+@keyframes silde {
+  0% {
+    position: relative;
+    left: -30px;
+    opacity: 0.3;
+  }
+  25% {
+    position: relative;
+    left: 0;
+    opacity: 1;
+  }
+  50% {
+    position: relative;
+    left: 0;
+    opacity: 1;
+  }
+  75% {
+    position: relative;
+    left: -10px;
+    opacity: 1;
+  }
+
+  100% {
+    position: relative;
+    left: 150px;
+    opacity: 0;
+  }
+}

@@ -1,0 +1,16 @@
+@headerH: 80px;
+@footerH: 80px;
+.f-header {
+  height: @headerH;
+}
+.f-content {
+  min-height: calc(~'100vh - @{headerH} - @{footerH} ');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.f-footer {
+  text-align: center;
+}

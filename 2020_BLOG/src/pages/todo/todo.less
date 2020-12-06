@@ -1,0 +1,39 @@
+.title,
+.addInput,
+.todo-list {
+  width: 80%;
+  margin: 20px auto;
+}
+.title {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 18px;
+}
+.addInput {
+}
+.todo-list {
+  .list-item {
+    padding: 20px;
+    border-radius: 10px;
+    transition: 1s ease;
+    .list-item-content {
+      display: flex;
+      justify-content: space-between;
+      span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; //向显示多少行就给多大值
+        -webkit-box-orient: vertical;
+      }
+    }
+  }
+  .list-item:hover {
+    box-shadow: 18px 18px 20px rgba(0, 0, 0, 0.1);
+
+    // box-shadow: none;
+  }
+  .empty {
+    margin: 20px 0;
+  }
+}
